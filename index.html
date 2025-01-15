@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>El Mundo del Modelaje</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset y estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.8;
+            margin: 0;
+        }
+
+        /* Estilo del encabezado */
+        header {
+            background: linear-gradient(135deg, #ff8da1, #ff4e8b);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        header p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #ff4e8b;
+            position: sticky;
+            top: 0;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 999;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 0 20px;
+            text-transform: uppercase;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff8da1;
+        }
+
+        /* Estilo de las secciones */
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+        section h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            color: #ff4e8b;
+            margin-bottom: 30px;
+        }
+
+        /* Carrusel de fotos */
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .carousel {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+        .carousel-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .carousel-button.left {
+            left: 10px;
+        }
+        .carousel-button.right {
+            right: 10px;
+        }
+
+        /* Contenido de texto */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .text-content {
+            flex: 1;
+            min-width: 300px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+        .media-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Estilo de las imágenes */
+        .media-content img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .media-content img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Video */
+        video {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff4e8b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #ff8da1;
+            text-decoration: none;
+        }
+
+        /* Estilo responsivo */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>El Mundo del Modelaje</h1>
+    <p>Descubre los secretos, la historia y lo que necesitas para triunfar en el fascinante mundo del modelaje.</p>
+</header>
+
+<nav>
+    <a href="#introduccion">Introducción</a>
+    <a href="#historia">Historia</a>
+    <a href="#requisitos">Requisitos</a>
+    <a href="#videos">Videos</a>
+</nav>
+
+<section id="introduccion">
+    <h2>¿Qué es el Modelaje?</h2>
+    <div class="content">
+        <div class="text-content">
+            <p>El modelaje es una forma de arte que va más allá de posar para fotografías o caminar por una pasarela. Es una disciplina que involucra creatividad, trabajo en equipo y profesionalismo. Los modelos actúan como representantes de marcas, productos y diseñadores, reflejando el estilo y la estética de las marcas a través de su imagen.</p>
+            <p>En esta página exploraremos la historia detrás del modelaje, los requisitos para entrar en este mundo y muchos más detalles interesantes.</p>
+        </div>
+        <div class="media-content">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2023/10/Portadas-Jewelry.png" alt="" class="" width="1080" height="675" srcset="https://www.mistercharly.com/wp-content/uploads/2023/10/Portadas-Jewelry.png 1080w, https://www.mistercharly.com/wp-content/uploads/2023/10/Portadas-Jewelry-480x320.png 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 1080px, 100vw">
+        </div>
+    </div>
+</section>
+
+<section id="historia">
+    <h2>Breve Historia del Modelaje</h2>
+    <div class="content">
+        <div class="text-content">
+            <p>El modelaje comenzó como una forma de presentar la moda en las tiendas del siglo XIX, pero fue en el siglo XX cuando realmente se popularizó. Modelos icónicas como Naomi Campbell y Cindy Crawford ayudaron a elevar la profesión, y hoy en día, el modelaje es una carrera global con millones de personas involucradas en diversas áreas: pasarelas, fotografía, redes sociales y mucho más.</p>
+        </div>
+        <div class="media-content">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjMuq4sXiOqeuo586dJow34AJRg5RSLcuvE1xegEO3jPjB9SWdCWWFr1vQc0TJ2Wg2zbBhk7DSqXEuI5Nqp-QH7wZjEmQvCjWIlbSoZZx-Dfwow_vK2wISdXhPu8RcBNroVTHE-Z3gn-zQ/s640/Coco+Chanel++in+her+atelier+with+Romy+Schneider%252C+1960+Giancarlo+Botti-1.jpg" width="640">
+        </div>
+    </div>
+</section>
+
+<section id="requisitos">
+    <h2>¿Qué es necesario para entrar en el mundo del Modelaje?</h2>
+    <div class="content">
+        <div class="text-content">
+            <ul>
+                <li><strong>Edad:</strong> Aunque hay modelos de todas las edades, la mayoría comienza entre los 16 y los 21 años.</li>
+                <li><strong>Altura:</strong> En el modelaje de pasarela, la altura suele ser un factor importante (generalmente más de 1.70 m).</li>
+                <li><strong>Medidas:</strong> El modelaje ha evolucionado para aceptar una variedad de tipos de cuerpo, pero una figura proporcionada es lo más buscado.</li>
+                <li><strong>Actitud:</strong> Tener confianza y saber posar correctamente frente a la cámara es esencial para tener éxito en esta carrera.</li>
+                <li><strong>Portafolio:</strong> Un buen portafolio con fotos de calidad es fundamental para ser tomado en cuenta por agencias de modelaje.</li>
+            </ul>
+        </div>
+        <div class="media-content">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2024/06/Servicios-Profesionales-agencia-de-modelos.webp" alt="¿Qué Servicios Ofrece una Agencia de Modelos?" class="" width="1080" height="675" srcset="https://www.mistercharly.com/wp-content/uploads/2024/06/Servicios-Profesionales-agencia-de-modelos.webp 1080w, https://www.mistercharly.com/wp-content/uploads/2024/06/Servicios-Profesionales-agencia-de-modelos-480x320.webp 480w" sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 1080px, 100vw">
+        </div>
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Videos sobre Modelaje</h2>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/v0fR5OEiZ44?si=g53DH-mzCIbouRXR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9CttV2IbwoQ?si=rV3s1CJdZH2QCgNJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </video>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Galería de Modelos</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2022/01/MESTU.-MISTER-CHARLY.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2020/10/arbile.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2020/10/natalia.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+             <img src="https://www.mistercharly.com/wp-content/uploads/2024/04/CARMEN-P.jpeg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+             <img src="https://www.mistercharly.com/wp-content/uploads/2024/04/TEST-SARA-VELA-JOYAS.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+             <img src="https://www.mistercharly.com/wp-content/uploads/2022/01/WhatsApp-Image-2021-04-11-at-22.11.22-2.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+             <img src="https://www.mistercharly.com/wp-content/uploads/2022/06/5a7ec4cd-59e1-4e4d-aee1-82b1d863d5d6.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2020/10/CHRISTIAN.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2024/04/MARIO-H-scaled.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2024/09/D854120-2b-scaled.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2024/09/JESUS.jpeg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+            <img src="https://www.mistercharly.com/wp-content/uploads/2024/04/GOYO.jpg" class="pmg-lightbox-link" aria-label="Open image" title="Open image" data-fancybox="pmg-gallery">
+
+      
+        </div>
+        <button class="carousel-button left" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-button right" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+<footer>
+   </footer>
+
+<script>
+    let index = 0;
+    function moveCarousel(direction) {
+        const carousel = document.querySelector('.carousel');
+        const images = document.querySelectorAll('.carousel img');
+        index += direction;
+        if (index < 0) {
+            index = images.length - 1;
+        } else if (index >= images.length) {
+            index = 0;
+        }
+        carousel.style.transform = `translateX(-${index * 100}%)`;
+    }
+</script>
+
+</body>
+</html>
